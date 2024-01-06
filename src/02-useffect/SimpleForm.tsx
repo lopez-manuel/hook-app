@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import { Message } from "./Message";
 
 interface IFormState {
     username: string,
@@ -58,6 +59,10 @@ export const SimpleForm = () => {
             value={email}
             onChange={ onInputChange }
         />
+
+        {
+            username === 'manuelrn96' && <Message/>
+        }
 
 
     </>
